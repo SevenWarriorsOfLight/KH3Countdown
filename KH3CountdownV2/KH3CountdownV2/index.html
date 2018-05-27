@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<audio autoplay loop>
+		<source src="audio/4-17 Dearly Beloved -Reprise-.mp3" type="audio/mpeg">
+	</audio>
+	
+	<div class="fullscreen">
+		<video autoplay muted loop id="video" class="fullscreen-video" poster="videos/kh3poster.png">
+			<source id="source" src="/videos/kh3.mp4" type="video/mp4">
+		</video>
+	</div>
+		
+	<div id="gradient"></div>
+		
+	<div class="content-container">
+		<div class="section-header">
+	<div class="crown">
+			</div>
+		</div>
+	</div>
+		
+	<div class="arrows">
+		<span class="prev-arrow"></span>
+		<span class="next-arrow" onclick="change()"></span>
+	</div>
+		
+	<span id="countdown"></span>
+	<span id="info"></span>
+		
+	<script>
+	function change() {
+		document.getElementById("video").poster = "videos/kh358poster.png";
+		document.getElementById("source").src = "videos/kh358days.mp4";
+		document.getElementById("video").load();
+		document.getElementById("countdown").style.display = "none";
+		document.getElementById("info").innerHTML = "358/2 days";
+		
+		setInterval(function()	{
+			if (document.getElementById("info").innerHTML === "358/2 days") {
+    			document.getElementById("info").innerHTML = "sept 29, 2009";
+			}	
+			else {
+				document.getElementById("info").innerHTML = "358/2 days";
+			}
+		}, 7000);
+	}
+	
+	var date = new Date("Jun 11, 2018 10:00:00").getTime();
+	var currentDate = new Date().getTime();
+	//var daysLeft = date - currentDate;
+	//var d = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
+	//var days = convertRoman(d);
+		
+	setInterval(function() {
+		getCountdown();
+	}, 1000);
+		
+	function getCountdown() {
+		var currentTime = new Date().getTime();
+		var distance = date - currentTime;
+		var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var days = convertRoman(d);
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		if (hours < 10) {
+    		hours = "0" + hours;
+    	}
+
+		if (minutes < 10) {
+    		minutes = "0" + minutes;
+		}
+
+		if (seconds < 10) {
+			seconds = "0" + seconds;
+		}
+
+		document.getElementById("countdown").innerHTML = days + " " + hours + ":" + minutes + ":" + seconds;
+			
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("countdown").innerHTML = "Released";
+		}
+	}
+		
+	function convertRoman(num) {  
+  		var result = '';
+  		var decimal = [100, 90, 50, 40, 10, 9, 5, 4, 1];
+  		var roman = ["C", "XC", "L", "XL", "X","IX","V","IV","I"];
+  			
+  		for (var i = 0; i <= decimal.length; i++) {
+    		while (num % decimal[i] < num) {   
+     		result += roman[i];
+
+      		num -= decimal[i];
+    		}
+  		}
+  	return result;
+  	}
+	</script>
+	
+</body>
+</html>
