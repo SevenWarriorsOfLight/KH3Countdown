@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{640366BA-4057-4D3C-883E-B7453203E77F}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Documents\KH3 Site\index.html = D:\Documents\KH3 Site\index.html
+		D:\Documents\KH3 Site\styles.css = D:\Documents\KH3 Site\styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "audio", "audio", "{B3104009-1A1E-4496-98D9-5B8F44AD8873}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Documents\KH3 Site\audio\4-17 Dearly Beloved -Reprise-.mp3 = D:\Documents\KH3 Site\audio\4-17 Dearly Beloved -Reprise-.mp3
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "background", "background", "{3389EC1F-EB9E-41EB-9468-E5C22CD50BDA}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Documents\KH3 Site\background\background.png = D:\Documents\KH3 Site\background\background.png
+		D:\Documents\KH3 Site\background\header-crown.png = D:\Documents\KH3 Site\background\header-crown.png
+		D:\Documents\KH3 Site\background\header-separator.png = D:\Documents\KH3 Site\background\header-separator.png
+		D:\Documents\KH3 Site\background\kh-timeline.png = D:\Documents\KH3 Site\background\kh-timeline.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icons", "icons", "{E2276D58-4B7F-403D-A400-BB0639EB8FFC}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Documents\KH3 Site\icons\crown-icon.png = D:\Documents\KH3 Site\icons\crown-icon.png
+		D:\Documents\KH3 Site\icons\glow.png = D:\Documents\KH3 Site\icons\glow.png
+		D:\Documents\KH3 Site\icons\heart-icon.png = D:\Documents\KH3 Site\icons\heart-icon.png
+		D:\Documents\KH3 Site\icons\mickey-icon.png = D:\Documents\KH3 Site\icons\mickey-icon.png
+		D:\Documents\KH3 Site\icons\next.png = D:\Documents\KH3 Site\icons\next.png
+		D:\Documents\KH3 Site\icons\previous.png = D:\Documents\KH3 Site\icons\previous.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "videos", "videos", "{AB06E678-56D5-4EF4-817F-78F1992A22B8}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Documents\KH3 Site\videos\kh.mp4 = D:\Documents\KH3 Site\videos\kh.mp4
+		D:\Documents\KH3 Site\videos\kh3.mp4 = D:\Documents\KH3 Site\videos\kh3.mp4
+		D:\Documents\KH3 Site\videos\kh358days.mp4 = D:\Documents\KH3 Site\videos\kh358days.mp4
+		D:\Documents\KH3 Site\videos\kh358poster.png = D:\Documents\KH3 Site\videos\kh358poster.png
+		D:\Documents\KH3 Site\videos\kh3d.mp4 = D:\Documents\KH3 Site\videos\kh3d.mp4
+		D:\Documents\KH3 Site\videos\kh3dposter.png = D:\Documents\KH3 Site\videos\kh3dposter.png
+		D:\Documents\KH3 Site\videos\kh3poster.png = D:\Documents\KH3 Site\videos\kh3poster.png
+		D:\Documents\KH3 Site\videos\khbbs.mp4 = D:\Documents\KH3 Site\videos\khbbs.mp4
+		D:\Documents\KH3 Site\videos\khbbs2.mp4 = D:\Documents\KH3 Site\videos\khbbs2.mp4
+		D:\Documents\KH3 Site\videos\khbbsposter.png = D:\Documents\KH3 Site\videos\khbbsposter.png
+		D:\Documents\KH3 Site\videos\khfcp.mp4 = D:\Documents\KH3 Site\videos\khfcp.mp4
+		D:\Documents\KH3 Site\videos\khfcpposter.png = D:\Documents\KH3 Site\videos\khfcpposter.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3104009-1A1E-4496-98D9-5B8F44AD8873} = {640366BA-4057-4D3C-883E-B7453203E77F}
+		{3389EC1F-EB9E-41EB-9468-E5C22CD50BDA} = {640366BA-4057-4D3C-883E-B7453203E77F}
+		{E2276D58-4B7F-403D-A400-BB0639EB8FFC} = {640366BA-4057-4D3C-883E-B7453203E77F}
+		{AB06E678-56D5-4EF4-817F-78F1992A22B8} = {640366BA-4057-4D3C-883E-B7453203E77F}
+	EndGlobalSection
+EndGlobal
